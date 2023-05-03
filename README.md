@@ -35,7 +35,7 @@ The data used in this project is pulled from the following API: https://randomus
 ## Client
 The source data for the processing pipeline is pulled from the following API: https://randomuser.me/ in .json format. The .json data will be read by the local python script and validated using a standard JSON schema. Afterwards, the data will be written to a .csv file.
 ## Storage
-Postgres is an open source object-relational database system that acts as a database in this project. Data from the .csv file is loaded in Postgres using a 'COPY' command.
+Postgres is an open source object-relational database system that acts as an OLTP database in this project. Data from the .csv file is loaded in Postgres using a 'COPY' command.
 ## Orchestration
 Apache Airflow is used to orchestrate this data pipeline.
 --- de aduagat vizualizare cu DAG-ul ---
@@ -44,7 +44,6 @@ Apache Airflow is used to orchestrate this data pipeline.
 # Pipelines
 ## Data Processing
 Data is pulled from an API every minute in a .json format. After the JSON schema is validated, the data is written to a .csv file which is then copied to a Postgres database. This DAG is scheduled using Airflow and tested using automated unittests.
-
 
 # Demo
 -- To be completed --
