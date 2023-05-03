@@ -40,6 +40,7 @@ Postgres is an open source object-relational database system that acts as an OLT
 Apache Airflow is used to orchestrate this data pipeline.
 --- de aduagat vizualizare cu DAG-ul ---
 ## Unittesting
+--- de adaugat informatii despre unittestele facute ---
 
 # Pipelines
 ## Data Processing
