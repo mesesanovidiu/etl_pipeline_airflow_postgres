@@ -40,7 +40,11 @@ Postgres is an open source object-relational database system that acts as an OLT
 Apache Airflow is used to orchestrate this data pipeline.
 ![Capture](https://user-images.githubusercontent.com/108272657/235998512-5ca21b79-09a0-4798-9345-156143c96f23.PNG)
 ## Unittesting
---- de adaugat informatii despre unittestele facute ---
+The Airflow DAG is tested using the following unittests:
+- Check the name and the number of tasks;
+- Check the default args used in the DAG;
+- Check the schedule interval;
+- Check the start date;
 
 # Pipelines
 ## Data Processing
