@@ -42,18 +42,12 @@ Apache Airflow is used to orchestrate this data pipeline.
 ## Unittesting
 
 # Pipelines
-## Batch Processing
-S3 Data Lake: Here are the sales transactions that are dumped in the .csv format.
+## Data Processing
+Data is pulled from an API every minute in a .json format. After the JSON schema is validated, the data is written to a .csv file which is then copied to a Postgres database. This DAG is scheduled using Airflow and tested using automated unittests.
 
-Amazon Redshift: Redshift is Amazon's analytics database, and is designed to crunch large amounts of data as a data warehouse. A redshift cluster has been created for this project as a OLAP Database. Once the database has been created, a staging table has been created. Then the redshift copy command has been used to copy the .csv data from S3 to the created table. Then the star schema tables has been created in the data warehouse and loaded by the data warehouse procedure. Changes in products and customers dimensions are tracked using SCD type 2.
-
---- Orchestration to be completed ---
-
-## Visualizations
--- To be completed --
 
 # Demo
 -- To be completed --
 
 # Conclusion
-Through the completion of this data engineering project, I have gained experience in the utilization of fundamental AWS services, including S3 and Redshift. This hands-on experience has enabled me to develop a deeper understanding of the AWS infrastructure and its capabilities for processing large-scale datasets. As a result of this project, I have gained the confidence and competence to effectively execute future data engineering projects within the AWS ecosystem.
+Through the completion of this project, I have gained experience in the processing .json files, performing schema validations and using Airflow & Docker. This hands-on experience has enabled me to develop a deeper understanding of Airflow and its capabilities for scheduling data pipelines. As a result of this project, I have gained the confidence and competence to effectively schedule future DAGs using Airlfow, as well as interacting with databases using python libraries.
