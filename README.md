@@ -18,6 +18,7 @@ The goal of this project is to build a data processing pipeline that extracts in
   - [Client](#client)
   - [Storage](#storage)
   - [Orchestration](#orchestration)
+  - [Unittesting](#unittesting)
 - [Pipelines](#pipelines)
   - [Batch Processing](#batch-processing)
 - [Demo](#demo)
@@ -32,14 +33,13 @@ The data used in this project is pulled from the following API: https://randomus
 ![Diagram - tools -postgres](https://user-images.githubusercontent.com/108272657/235896146-89683c9c-51ee-407b-a571-6e1ed2afcbc0.svg)
 
 ## Client
-The source data for the processing pipeline is pulled from the following API:https://randomuser.me/ in .json format. The .json data will be read by the local python script.
+The source data for the processing pipeline is pulled from the following API: https://randomuser.me/ in .json format. The .json data will be read by the local python script and validated using a standard JSON schema. Afterwards, the data will be written to a .csv file.
 ## Storage
-S3: Amazon Simple Storage Service is a service that acts as a data lake in this project. Source sales transactions are hosted here for batch/bulk load.
-Redshift: Datawareouse or OLAP database. A star schema has been built for this project on this relational database.
+Postgres is an open source object-relational database system that acts as a database in this project. Data from the .csv file is loaded in Postgres using a 'COPY' command.
 ## Orchestration
 Apache Airflow is used to orchestrate this data pipeline.
-## Visualization
-Grafana: Dasboards are built to visualize the data from the Redshift data warehouse and S3.
+--- de aduagat vizualizare cu DAG-ul ---
+## Unittesting
 
 # Pipelines
 ## Batch Processing
