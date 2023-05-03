@@ -1,5 +1,6 @@
 
 # AWS Batch Processing ETL pipeline for Sales Transactions
+# ETL Pipeline
 
 # Introduction
 The goal of this project is to build a batch data processing pipeline that extracts sales data on a daily basis from a CSV file, stores it in a staging area in a S3 bucket, transforms the data, and then loads the transformed data into a Redshift database, where data is modeled using a star schema. The project also includes a step where SCD type 2 is implemented on dimension tables.
