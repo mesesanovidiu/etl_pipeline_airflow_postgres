@@ -1,6 +1,7 @@
 
 # ETL Pipeline Postgres & Airflow
 
+
 # Introduction
 The goal of this project is to build a data processing pipeline that extracts information about new users every minute from an API, transforms the data and stores it in a Postgres database.
 
