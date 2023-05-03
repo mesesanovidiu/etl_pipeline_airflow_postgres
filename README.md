@@ -18,19 +18,15 @@ The goal of this project is to build a data processing pipeline that extracts in
   - [Client](#client)
   - [Storage](#storage)
   - [Orchestration](#orchestration)
-  - [Visualization](#visualization)
 - [Pipelines](#pipelines)
   - [Batch Processing](#batch-processing)
-  - [Visualizations](#visualizations)
 - [Demo](#demo)
 - [Conclusion](#conclusion)
 - [Appendix](#appendix)
 
 
 # The Data Set
-The dataset I used in this project is taken from Kaggle. This is a simulated sales transaction dataset containing legitimate transactions. It covers 307 orders (each with multiple line numbers) from a pool of 92 customers. The dataset contains details about the customers, orders and products.
-
-![Model databases - Database ER diagram (crow's foot)](https://user-images.githubusercontent.com/108272657/235597548-e3087281-4b5f-4789-9e18-b99f31b981c9.svg)
+The data used in this project is pulled from the following API: https://randomuser.me/. This is a free, open-source API for generating random user data.
 
 # Used Tools
 ![Diagram - tools](https://user-images.githubusercontent.com/108272657/235611932-d72c0476-c39d-4196-8a6b-58e61102d107.svg)
