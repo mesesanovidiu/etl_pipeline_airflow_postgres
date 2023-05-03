@@ -50,4 +50,4 @@ Data is pulled from an API every minute in a .json format. After the JSON schema
 -- To be completed --
 
 # Conclusion
-Through the completion of this project, I have gained experience in the processing .json files, performing schema validations and using Airflow & Docker. This hands-on experience has enabled me to develop a deeper understanding of Airflow and its capabilities for scheduling data pipelines. As a result of this project, I have gained the confidence and competence to effectively schedule future DAGs using Airlfow, as well as interacting with databases using python libraries.
+Through the completion of this project, I have gained experience in processing .json files, performing JSON schema validations and using Airflow & Docker. This hands-on experience has enabled me to develop a deeper understanding of Airflow and its capabilities for scheduling data pipelines. As a result of this project, I have gained the confidence and competence to effectively schedule DAGs using Airlfow, as well as interacting with databases using python libraries.
