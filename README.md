@@ -29,11 +29,10 @@ The goal of this project is to build a data processing pipeline that extracts in
 The data used in this project is pulled from the following API: https://randomuser.me/. This is a free, open-source API for generating random user data.
 
 # Used Tools
-![Diagram - tools](https://user-images.githubusercontent.com/108272657/235611932-d72c0476-c39d-4196-8a6b-58e61102d107.svg)
-
+![Diagram - tools -postgres](https://user-images.githubusercontent.com/108272657/235896146-89683c9c-51ee-407b-a571-6e1ed2afcbc0.svg)
 
 ## Client
-The source data for the batch processing pipeline is located in the on a GitHub repo in .csv format. The .csv data will be read by the local python script.
+The source data for the processing pipeline is pulled from the following API:https://randomuser.me/ in .json format. The .json data will be read by the local python script.
 ## Storage
 S3: Amazon Simple Storage Service is a service that acts as a data lake in this project. Source sales transactions are hosted here for batch/bulk load.
 Redshift: Datawareouse or OLAP database. A star schema has been built for this project on this relational database.
