@@ -38,7 +38,7 @@ The source data for the processing pipeline is pulled from the following API: ht
 Postgres is an open source object-relational database system that acts as an OLTP database in this project. Data from the .csv file is loaded in Postgres using a 'COPY' command.
 ## Orchestration
 Apache Airflow is used to orchestrate this data pipeline.
---- de aduagat vizualizare cu DAG-ul ---
+![Capture](https://user-images.githubusercontent.com/108272657/235998512-5ca21b79-09a0-4798-9345-156143c96f23.PNG)
 ## Unittesting
 --- de adaugat informatii despre unittestele facute ---
 
