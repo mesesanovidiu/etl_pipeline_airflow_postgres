@@ -47,7 +47,7 @@ Apache Airflow is used to orchestrate this data pipeline.
 Data is pulled from an API every minute in a .json format. After the JSON schema is validated, the data is written to a .csv file which is then copied to a Postgres database. This DAG is scheduled using Airflow and tested using automated unittests.
 
 # Demo
--- To be completed --
+![demo](https://user-images.githubusercontent.com/108272657/235999946-5c27d976-a7c5-4750-bbe3-d39f93f2b3a3.PNG)
 
 # Conclusion
 Through the completion of this project, I have gained experience in processing .json files, performing JSON schema validations and using Airflow & Docker. This hands-on experience has enabled me to develop a deeper understanding of Airflow and its capabilities for scheduling data pipelines. As a result of this project, I have gained the confidence and competence to effectively schedule DAGs using Airlfow, as well as interacting with databases using python libraries.
