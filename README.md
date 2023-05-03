@@ -1,18 +1,17 @@
 
-# AWS Batch Processing ETL pipeline for Sales Transactions
-# ETL Pipeline
+# ETL Pipeline Postgres & Airflow
 
 # Introduction
-The goal of this project is to build a batch data processing pipeline that extracts sales data on a daily basis from a CSV file, stores it in a staging area in a S3 bucket, transforms the data, and then loads the transformed data into a Redshift database, where data is modeled using a star schema. The project also includes a step where SCD type 2 is implemented on dimension tables.
+The goal of this project is to build a data processing pipeline that extracts information about new users every minute from an API, transforms the data and stores it in a Postgres database.
 
 # Objectives of this project
-- Build and understand a data processing framework in AWS used for batch data loading;
-- Setup and understand cloud components involved in data batch processing (S3, Redshift);
-- Understand how to approach or build an data processing pipeline from the ground up;
-
+- Understand how to use python libraries (Psycopg2) to interact with databases;
+- Understand how to use JSON schema validation in order to perform data quality checks;
+- Build an Airflow DAG and understand how to orchestrate a batch processing pipeline and connect to external sources;
+- Setup a docker container that contains all dependencies needed for the project (Airflow webserver, scheduler, worker, Postgres DB etc);
+- Understand how to use unittesting python libraries (Unittest) to perform automated testing;
 
 # Contents
-
 - [The Data Set](#the-data-set)
 - [Used Tools](#used-tools)
   - [Client](#client)
