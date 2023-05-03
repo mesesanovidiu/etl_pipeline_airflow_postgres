@@ -20,7 +20,7 @@ The goal of this project is to build a data processing pipeline that extracts in
   - [Orchestration](#orchestration)
   - [Unittesting](#unittesting)
 - [Pipelines](#pipelines)
-  - [Batch Processing](#batch-processing)
+  - [Data Processing](#data-processing)
 - [Demo](#demo)
 - [Conclusion](#conclusion)
 - [Appendix](#appendix)
